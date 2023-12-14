@@ -9,16 +9,16 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Pendaftaran IPC</title>
+    <title>Arsip Data Nasabah</title>
 
     <!-- Custom fonts for this template-->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="../../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="../../css/sb-admin-2.min.css" rel="stylesheet">
 
 </head>
 
@@ -28,13 +28,13 @@
     <div id="wrapper">
 
         <!-- Sidebar -->
-        <ul class="navbar-nav navbar-light sidebar sidebar-dark accordion" id="accordionSidebar" style="background-color: blueviolet;">
+        <ul class="navbar-nav navbar-light sidebar sidebar-dark accordion" id="accordionSidebar" style="background-color: green;">
 
             <!-- Sidebar - Brand -->
             <br>
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
                 <div class="sidebar-brand-icon" style="margin-left: -10px;">
-                    <img class="img-fluid" src="img/ipc1.png" alt="..." width="50%">
+                    <img class="img-fluid" src="../../img/logo-ba.png" alt="..." width="50%">
                 </div>
 
             </a>
@@ -49,24 +49,39 @@
                     <span>Dashboard</span></a>
             </li>
 
-            <!-- Divider -->
+<!-- Divider -->
             <hr class="sidebar-divider">
 
             <!-- Heading -->
             <div class="sidebar-heading">
-                Peserta
+                Data User
             </div>
 
             <li class="nav-item">
                 <a class="nav-link" href="charts.html">
                     <i class="fas fa-fw fa-user"></i>
-                    <span>Daftar Peserta</span></a>
+                    <span>Tambah User Pegawai</span></a>
+            </li>
+        
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Pembuatan
+            </div>
+
+            <li class="nav-item">
+                <a class="nav-link" href="charts.html">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Buat Buku Tabungan</span></a>
             </li>
             
             <li class="nav-item">
                 <a class="nav-link" href="charts.html">
                     <i class="fas fa-fw fa-file"></i>
-                    <span>Paper Peserta</span></a>
+                    <span>Buat ATM</span></a>
             </li>
 
             <!-- Divider -->
@@ -74,21 +89,21 @@
 
             <!-- Heading -->
             <div class="sidebar-heading">
-                Juri
+                Penutupan
             </div>
 
             <!-- Nav Item - Charts -->
             <li class="nav-item">
                 <a class="nav-link" href="charts.html">
-                    <i class="fas fa-fw fa-user-alt"></i>
-                    <span>Daftar Juri</span></a>
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Tutup Buku Tabungan</span></a>
             </li>
 
             <!-- Nav Item - Charts -->
             <li class="nav-item">
                 <a class="nav-link" href="charts.html">
-                    <i class="fas fa-fw fa-folder"></i>
-                    <span>Form Penilaian</span></a>
+                    <i class="fas fa-fw fa-file"></i>
+                    <span>Tutup ATM</span></a>
             </li>
 
             <!-- Divider -->
@@ -109,7 +124,7 @@
             <div id="content">
 
                 <!-- Topbar -->
-                <nav class="navbar navbar-expand navbar-light topbar mb-4 static-top shadow" style="background-color: rgb(72, 15, 122);">
+                <nav class="navbar navbar-expand navbar-light topbar mb-4 static-top shadow" style="background-color: darkgreen">
 
                     <!-- Sidebar Toggle (Topbar) -->
                     <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
@@ -123,7 +138,7 @@
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-right: 30px;">
-                                <span class="mr-2 d-none d-lg-inline text-white-600 large">Nama Peserta</span>
+                                <span class="mr-2 d-none d-lg-inline text-white-600 large">Admin</span>
                                 <i class="fas fa-fw fa-user"></i>
                             </a>
                             <!-- Dropdown - User Information -->
@@ -156,66 +171,6 @@
                         
                     </div>
 
-                    <!-- Content Row -->
-                    <div class="row">
-
-                        <!-- Earnings (Monthly) Card Example -->
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-primary shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                                Daftar Peserta</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">20</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-calendar fa-2x text-gray-300"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Earnings (Monthly) Card Example -->
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-info shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
-                                                Paper Peserta</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">12</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Earnings (Monthly) Card Example -->
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-success shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                                Daftar Juri</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">10</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-user fa-2x text-gray-300"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    
-                    </div>
-
 
                     <!-- Content Row -->
                     <div class="row">
@@ -228,19 +183,12 @@
                                     <h6 class="m-0 font-weight-bold text-primary">Welcome Message</h6>
                                 </div>
                                 <div class="card-body">
-                                    <p>Creativity and Entrepreneurship Innovation in Science and Technology.
-                                        We invite passionate teams from various backgrounds and disciplines to submit their entrepreneurial 
-                                        innovation papers, sharing their transformative ideas, strategies, and experiences. 
-                                        Whether you are revolutionizing a product, service, or business model, or introducing a disruptive technology, 
-                                        we want to hear about your entrepreneurial journey and the impact you envision making in the world. </p>
+                                    <p>Bank Aceh Syariah adalah perusahaan yang bergerak di bidang perbankan milik Pemerintah Provinsi Aceh dan Pemerintah Kabupaten/Kota yang mana dalam sejarahnya perusahaan ini didirikan oleh Pemerintah Provinsi dan Pemerintah Kabupaten/Kota se Aceh.</p>
                                     <p class="mb-0">Contact Info :<br>
-                                        Faculty of Science and Technology UIN Ar-Raniry <br> Jl. Syekh Abdur Rauf – Darussalam <br>
-                                        Email : fst@ar-raniry.ac.id <br>
-                                        Participant Outside Indonesia
-                                        (Dr. Suardi Nur : +62 852-7536-6273)
-                                        Participants from Indonesia
-                                        (M. Faisi Ikhwali M.Eng : +62 852-7747-4036)
-                                        Technical Support (Raihana Ramadhanulita, S.Kom : +62 812-6509-3826)
+                                    Kantor pusat Bank aceh <br>
+                                    Jl. Mr. Mohd. Hasan No. 89, Batoh, Banda Aceh <br>
+                                    Provinsi Aceh, Indonesia – 23245 <br>
+                                    email :  divisi.cotary@bankaceh.co.id 
                                     </p>
                                 </div>
                             </div>

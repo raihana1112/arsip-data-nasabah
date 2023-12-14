@@ -18,7 +18,7 @@
         rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="../css/sb-admin-2.min.css" rel="stylesheet">
 
 </head>
 
@@ -48,7 +48,6 @@
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
-
 
             <!-- Divider -->
             <hr class="sidebar-divider">
@@ -153,34 +152,46 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+                        <h1 class="h3 mb-0 text-gray-800">Isi Data Tutup Buku Tabungan Nasabah</h1>
                         
                     </div>
 
 
-                    <!-- Content Row -->
-                    <div class="row">
+                 <div class="card-body">
+                                                    <form>
+                                                        <div class="form-group row">
+                                                            <div class="col-sm-6 mb-3 mb-sm-0">
+                                                                <label for="exampleFormControlSelect1"> NIK Nasabah</label><select class="form-control form-control-solid" id="exampleFormControlSelect1" required>
+                                                                    <option>Pilih NIK Nasabah</option>
+                                                                    <option>117101119</option>
+                                                                    
 
-                        <!-- Content Column -->
-                        <div class="col-lg-10 mb-4">
-                            <!-- Approach -->
-                            <div class="card shadow mb-4">
-                                <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Welcome Message</h6>
-                                </div>
-                                <div class="card-body">
-                                    <p>Bank Aceh Syariah adalah perusahaan yang bergerak di bidang perbankan milik Pemerintah Provinsi Aceh dan Pemerintah Kabupaten/Kota yang mana dalam sejarahnya perusahaan ini didirikan oleh Pemerintah Provinsi dan Pemerintah Kabupaten/Kota se Aceh.</p>
-                                    <p class="mb-0">Contact Info :<br>
-                                    Kantor pusat Bank aceh <br>
-                                    Jl. Mr. Mohd. Hasan No. 89, Batoh, Banda Aceh <br>
-                                    Provinsi Aceh, Indonesia – 23245 <br>
-                                    email :  divisi.cotary@bankaceh.co.id 
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </div>
+                                                                </select>
+                                                            </div>
+                                                            
+                                                            <div class="col-sm-6 mb-3 mb-sm-0"><label for="exampleFormControlInput1">No Rekening</label><input class="form-control form-control-solid" id="exampleFormControlInput1" type="text" readonly></div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                            <div class="col-sm-6 mb-3 mb-sm-0"><label for="exampleFormControlInput1">Nama Lengkap</label><input class="form-control form-control-solid" id="exampleFormControlInput1" type="text" readonly></div>
+                                                            <div class="col-sm-6 mb-3 mb-sm-0"><label for="exampleFormControlInput1">Jenis Buku</label><input class="form-control form-control-solid" id="exampleFormControlInput1" type="text" readonly></div>
+
+                                                             
+                                                        </div>
+                                                        <div class="form-group row">
+                                                            <div class="col-sm-6 mb-3 mb-sm-0"><label for="exampleFormControlInput1" required>Tanggal Tutup Buku Tabungan</label> 
+                                                                <input class="form-control ps-0" type="date">
+                                                            </div>
+
+                                                            
+                                                        </div>
+                                                       
+                                                        
+
+                                                        <button class="btn btn-success" style="float: right;" type="button">Tambah Data</button>
+
+                                                    </form>
+                                                </div>
+
 
                 </div>
                 <!-- /.container-fluid -->
@@ -188,15 +199,7 @@
             </div>
             <!-- End of Main Content -->
 
-            <!-- Footer -->
-            <footer class="sticky-footer bg-white">
-                <div class="container my-auto">
-                    <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Raihana - Technical Support IPC 2023</span>
-                    </div>
-                </div>
-            </footer>
-            <!-- End of Footer -->
+           
 
         </div>
         <!-- End of Content Wrapper -->
