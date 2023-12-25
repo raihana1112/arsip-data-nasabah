@@ -11,14 +11,16 @@
 
     <title>Arsip Data Nasabah</title>
 
-    <!-- Custom fonts for this template-->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+     <!-- Custom fonts for this template-->
+    <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
 
     <!-- Custom styles for this template-->
     <link href="../css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="../vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+
 
 </head>
 
@@ -34,7 +36,7 @@
             <br>
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
                 <div class="sidebar-brand-icon" style="margin-left: -10px;">
-                    <img class="img-fluid" src="img/logo-ba.png" alt="..." width="50%">
+                    <img class="img-fluid" src="../img/logo-ba.png" alt="..." width="50%">
                 </div>
 
             </a>
@@ -54,42 +56,39 @@
 
             <!-- Heading -->
             <div class="sidebar-heading">
-                Pembuatan
+                Data Arsip
             </div>
 
             <li class="nav-item">
-                <a class="nav-link" href="charts.html">
+                <a class="nav-link" href="tabungan-wadiah.php">
                     <i class="fas fa-fw fa-folder"></i>
-                    <span>Buat Buku Tabungan</span></a>
+                    <span>REG Tabungan Wadiah</span></a>
             </li>
             
             <li class="nav-item">
-                <a class="nav-link" href="charts.html">
-                    <i class="fas fa-fw fa-file"></i>
-                    <span>Buat ATM</span></a>
-            </li>
-
-            <!-- Divider -->
-            <hr class="sidebar-divider">
-
-            <!-- Heading -->
-            <div class="sidebar-heading">
-                Penutupan
-            </div>
-
-            <!-- Nav Item - Charts -->
-            <li class="nav-item">
-                <a class="nav-link" href="charts.html">
+                <a class="nav-link" href="tabungan-firdaus.php">
                     <i class="fas fa-fw fa-folder"></i>
-                    <span>Tutup Buku Tabungan</span></a>
+                    <span>REG Tabungan Firdaus </span></a>
             </li>
 
-            <!-- Nav Item - Charts -->
             <li class="nav-item">
-                <a class="nav-link" href="charts.html">
+                <a class="nav-link" href="m-banking.php">
                     <i class="fas fa-fw fa-file"></i>
-                    <span>Tutup ATM</span></a>
+                    <span>REG M Banking </span></a>
             </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="atm-silver.php">
+                    <i class="fas fa-fw fa-file"></i>
+                    <span>REG ATM Silver </span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="atm-gold.php">
+                    <i class="fas fa-fw fa-file"></i>
+                    <span>REG ATM Gold </span></a>
+            </li>
+
 
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
@@ -129,10 +128,7 @@
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="userDropdown" style="margin-right: 15px;">
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Profile
-                                </a>
+                              
                                 
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
@@ -152,49 +148,105 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Isi Data Tutup ATM Nasabah</h1>
+                        <h1 class="h3 mb-0 text-gray-800">REG M Banking</h1>
                         
                     </div>
 
 
                  <div class="card-body">
-                                                    <form>
+                    <form method="POST" action="m-banking/tambah-mbank.php">
                                                         <div class="form-group row">
-                                                            <div class="col-sm-6 mb-3 mb-sm-0">
-                                                                <label for="exampleFormControlSelect1"> NIK Nasabah</label><select class="form-control form-control-solid" id="exampleFormControlSelect1" required>
-                                                                    <option>Pilih NIK Nasabah</option>
-                                                                    <option>117101119</option>
-                                                                    
-
-                                                                </select>
-                                                            </div>
-                                                            
-                                                            <div class="col-sm-6 mb-3 mb-sm-0"><label for="exampleFormControlInput1">Nama Lengkap</label><input class="form-control form-control-solid" id="exampleFormControlInput1" type="text" readonly></div>
-                                                        </div>
-                                                        <div class="form-group row">
-                                                            <div class="col-sm-6 mb-3 mb-sm-0"><label for="exampleFormControlInput1">No ATM</label><input class="form-control form-control-solid" id="exampleFormControlInput1" type="text" readonly></div>
-                                                            <div class="col-sm-6 mb-3 mb-sm-0"><label for="exampleFormControlInput1">Jenis ATM</label><input class="form-control form-control-solid" id="exampleFormControlInput1" type="text" readonly></div>
-
-                                                             
-                                                        </div>
-                                                        <div class="form-group row">
-                                                            <div class="col-sm-6 mb-3 mb-sm-0"><label for="exampleFormControlInput1" required>Tanggal Tutup ATM</label> 
-                                                                <input class="form-control ps-0" type="date">
+                                                            <div class="col-sm-3 mb-3 mb-sm-0"><label for="exampleFormControlInput1" required>Tanggal</label> 
+                                                                <input class="form-control ps-0" type="date" name="tanggal">
                                                             </div>
 
+                                                            <div class="col-sm-3 mb-3 mb-sm-0"><label for="exampleFormControlInput1">No. Rekening</label><input class="form-control form-control-solid" name="no_rek" id="exampleFormControlInput1" type="text" required></div>
+
+                                                           
+                                                        </div>
+                                                        <div class="form-group row">
+                                                            
+                                                            
+                                                            <div class="col-sm-3 mb-3 mb-sm-0"><label for="exampleFormControlInput1">Nama</label><input class="form-control form-control-solid" name="nama" id="exampleFormControlInput1" type="text" required></div>
+
+                                                            <div class="col-sm-3 mb-3 mb-sm-0"><label for="exampleFormControlInput1">No. Hp</label><input class="form-control form-control-solid" name="no_hp" id="exampleFormControlInput1" type="text" required></div>    
                                                             
                                                         </div>
-                                                       
-                                                        
-
-                                                        <button class="btn btn-success" style="float: right;" type="button">Tambah Data</button>
+                                                        <div class="form-group row">
+                                                            <div class="col-sm-4 mb-3 mb-sm-0"><label for="exampleFormControlInput1">Email</label><input class="form-control form-control-solid" name="email" id="exampleFormControlInput1" type="text" required></div>     
+                                                        </div>
+                                                     
+                                                        <input type="submit" value="Tambah Data" class="btn btn-success" style="float: left;">
 
                                                     </form>
+                                                    
                                                 </div>
 
 
                 </div>
                 <!-- /.container-fluid -->
+
+<!-- DataTales Example -->
+                    <div class="card shadow mb-4" style="margin: 45px">
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary">Data M-Banking</h6>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                    <thead>
+                                        <tr> 
+                                            <th>No.</th>  
+                                            <th>Tanggal</th>
+                                            <th>No. Rekening</th>
+                                            <th>Nama</th>
+                                            <th>No.Hp</th>
+                                            <th>Email</th>
+                                            <th>Keterangan</th>
+                                            
+                                        </tr>
+                                    </thead>
+                                    <tfoot>
+                                        <tr>
+                                            <th>No.</th> 
+                                            <th>Tanggal</th>
+                                            <th>No. Rekening</th>
+                                            <th>Nama</th>
+                                            <th>No.Hp</th>
+                                            <th>Email</th>
+                                            <th>Keterangan</th>
+                                        </tr>
+                                    </tfoot>
+                                    <tbody>
+
+                                        <?php 
+        include '../koneksi.php';
+        $no = 1;
+        $data = mysqli_query($koneksi,"select * from m_banking");
+        while($d = mysqli_fetch_array($data)){
+            ?>
+            <tr>
+                <td><?php echo $no++; ?></td>
+                <td><?php echo $d['tanggal']; ?></td>
+                <td><?php echo $d['no_rek']; ?></td>
+                <td><?php echo $d['nama']; ?></td>
+                <td><?php echo $d['no_hp']; ?></td>
+                <td><?php echo $d['email']; ?></td>
+                <td>
+                    <a href="edit-mbank.php?id=<?php echo $d['id']; ?>">EDIT</a>
+                    <a href="m-banking/hapus-mbank.php?id=<?php echo $d['id']; ?>">HAPUS</a>
+                </td>
+            </tr>
+            <?php 
+        }
+        ?>
+
+                                       
+                                     </tbody>
+                                 </table>
+                             </div>
+                         </div>
+
 
             </div>
             <!-- End of Main Content -->
@@ -226,28 +278,28 @@
                 <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="login.html">Logout</a>
+                    <a class="btn btn-primary" href="../login.php">Logout</a>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Bootstrap core JavaScript-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Core plugin JavaScript-->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for all pages-->
-    <script src="js/sb-admin-2.min.js"></script>
+    <script src="../js/sb-admin-2.min.js"></script>
 
-    <!-- Page level plugins -->
-    <script src="vendor/chart.js/Chart.min.js"></script>
+     <!-- Page level plugins -->
+    <script src="../vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="../vendor/datatables/dataTables.bootstrap4.min.js"></script>
 
     <!-- Page level custom scripts -->
-    <script src="js/demo/chart-area-demo.js"></script>
-    <script src="js/demo/chart-pie-demo.js"></script>
+    <script src="../js/demo/datatables-demo.js"></script>
 
 </body>
 
