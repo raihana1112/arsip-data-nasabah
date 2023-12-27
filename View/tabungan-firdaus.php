@@ -33,7 +33,7 @@
 
             <!-- Sidebar - Brand -->
             <br>
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="../index.php">
                 <div class="sidebar-brand-icon" style="margin-left: -10px;">
                     <img class="img-fluid" src="../img/logo-ba.png" alt="..." width="50%">
                 </div>
@@ -45,7 +45,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" href="index.html">
+                <a class="nav-link" href="../index.php">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
@@ -169,7 +169,7 @@
                                                         <div class="form-group row">
                                                             <div class="col-sm-3 mb-3 mb-sm-0"><label for="exampleFormControlInput1">Alamat</label><input class="form-control form-control-solid" name="alamat" id="exampleFormControlInput1" type="text" required></div>  
 
-                                                            <div class="col-sm-3 mb-3 mb-sm-0"><label for="exampleFormControlInput1">Setoran Awal (Rupiah)</label><input class="form-control form-control-solid" name="alamat" id="exampleFormControlInput1" type="text" required></div>        
+                                                            <div class="col-sm-3 mb-3 mb-sm-0"><label for="exampleFormControlInput1">Setoran Awal (Rupiah)</label><input class="form-control form-control-solid" name="setoran_awal" id="exampleFormControlInput1" type="text" required></div>        
                                                         </div>
                                                      
                                                         <input type="submit" value="Tambah Data" class="btn btn-success" style="float: left;">
